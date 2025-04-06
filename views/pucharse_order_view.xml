@@ -9,7 +9,7 @@
                         string="Imprimir Etiquetas"
                         type="action"
                         class="btn-secondary"
-                        attrs="{'invisible': [('state', '!=', 'purchase')]}"/>
+                        if="state == 'purchase'"/>
             </header>
         </field>
     </record>
