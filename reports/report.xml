@@ -1,0 +1,11 @@
+<odoo>
+    <report 
+        id="report_purchase_labels"
+        model="purchase.order"
+        string="Etiquetas de Compra 2x1"
+        report_type="qweb-pdf"
+        name="pucharse_label.report_purchase_label_template"
+        file="pucharse_label.report_purchase_label_template"
+        print_report_name="'Etiquetas Compra - %s' % (object.name)"
+    />
+</odoo>

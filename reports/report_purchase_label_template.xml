@@ -1,0 +1,15 @@
+<odoo>
+    <template id="report_purchase_label_template">
+        <t t-call="web.basic_layout">
+            <t t-foreach="doc.order_line" t-as="line">
+                <div style="width: 2in; height: 1in; border: 1px solid #000; padding: 4px; margin-bottom: 8px;">
+                    <strong t-esc="line.product_id.display_name"/><br/>
+                    <span t-esc="'Cantidad: %s' % line.product_qty"/><br/>
+                    <t t-if="line.product_id.barcode">
+                        <img t-att-src="'/report/barcode/Code128/%s' % line.product_id.barcode" style="width:100%; height:auto"/>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

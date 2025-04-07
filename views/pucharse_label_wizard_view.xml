@@ -5,6 +5,7 @@
         <field name="arch" type="xml">
             <form string="Imprimir Etiquetas">
                 <group>
+                    <!-- Campo invisible necesario para mantener la orden de compra activa -->
                     <field name="purchase_id" invisible="1"/>
                 </group>
                 <footer>
