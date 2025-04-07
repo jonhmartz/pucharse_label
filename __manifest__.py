@@ -7,9 +7,10 @@
     "author": "TuNombre",
     "depends": ["purchase", "stock"],
     "data": [
-        "views/pucharse_label_wizard_view.xml",
-        "views/pucharse_order_view.xml"
-    ],
+    "security/ir.model.access.csv",
+    "views/pucharse_label_wizard_view.xml",
+    "views/pucharse_order_view.xml",
+],
     "installable": True,
     "application": False
 }
